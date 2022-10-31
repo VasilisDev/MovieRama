@@ -1,0 +1,81 @@
+{
+  "header": {
+    "login":"Log in",
+    "signUp": "Sign up",
+    "profile": "Profile",
+    "signOut": "Sign Out",
+    "title": "MovieRama",
+    "welcomeMessage": "Welcome back "
+  },
+  "loginPage": {
+    "form": {
+      "username": {
+        "label": "Username",
+        "required": "Username is required"
+      },
+      "password": {
+        "label": "Password",
+        "required": "Password is required"
+      },
+      "submit": "Sign in",
+      "noAccountYet": "Don't have an account yet?",
+      "signUpHere": "Sign up here"
+    }
+  },
+  "registerPage": {
+    "form": {
+      "username": {
+        "label": "Username",
+        "required": "Username is required",
+        "alphaNum": "Username can only contain letters and numbers",
+        "minLength": "Username must have at least {minLength} letters.",
+        "maxLength": "Username is too long. It can contains maximum {maxLength} letters."
+      },
+      "firstName": {
+        "label": "First name",
+        "required": "First name is required",
+        "alpha": "First name can only contain letters",
+        "minLength": "First name must have at least {minLength} letters.",
+        "maxLength": "First name is too long. It can contains maximum {maxLength} letters."
+      },
+      "lastName": {
+        "label": "Last name",
+        "required": "Last name is required",
+        "alpha": "Last name can only contain letters",
+        "minLength": "Last name must have at least {minLength} letters.",
+        "maxLength": "Last name is too long. It can contains maximum {maxLength} letters."
+      },
+      "password": {
+        "label": "Password",
+        "required": "Password is required",
+        "minLength": "Password is too short. It can contains at least {minLength} letters.",
+        "maxLength": "Password is too long. It can contains maximum {maxLength} letters."
+      },
+      "submit": "Create account",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    }
+  },
+  "homePage": {
+    "createNewMovie": "Create New Movie",
+    "firstTimeVote": "Be the first to vote for this movie:"
+
+  },
+  "addMovieModal": {
+    "title": "Add Movie",
+    "required": "This is required field",
+    "add": "Add",
+    "cancel": "Cancel"
+  },
+  "error": {
+    "request": {
+      "bad": "Bad request",
+      "notAuthorized": "Request not authorized.",
+      "forbidden": "Request forbidden.",
+      "notFound": "Request failed. Request endpoint not found on the server.",
+      "unknownServerError": "There is an error on the server side. Please try again later.",
+      "failed": "Request failed. Please try again later.",
+      "noResponse": "Request failed. No response from the server."
+    }
+  }
+}
