@@ -60,7 +60,7 @@
       </div>
     </div>
     <AddMovieModal
-      @added="onMovieAdded"
+        @added="onMovieAdded"
     />
   </div>
 </template>
@@ -78,7 +78,7 @@ export default {
   components: {MovieSort, AddMovieModal, PageHeader},
   data() {
     return {
-      errorMessage:'',
+      errorMessage: '',
       voteResultMessage: '',
       hatesInAscending: false,
       createdDateAscending: false,
@@ -105,7 +105,7 @@ export default {
             let r = b.likes.length
             return l - r
           }
-          if(this.likesInAscending) {
+          if (this.likesInAscending) {
             return this.movies.sort(ascendingOrderLikesFn)
           }
           return this.movies.reverse(ascendingOrderLikesFn)
@@ -116,7 +116,7 @@ export default {
             let r = b.dislikes.length
             return l - r
           }
-          if(this.hatesInAscending) {
+          if (this.hatesInAscending) {
             return this.movies.sort(ascendingOrderDislikesLikesFn)
           }
           return this.movies.reverse(ascendingOrderDislikesLikesFn)
@@ -125,7 +125,7 @@ export default {
           let createdDateAscendingFn = (a, b) => {
             return new Date(b.createdDate) - new Date(a.createdDate);
           }
-          if(this.createdDateAscending) {
+          if (this.createdDateAscending) {
             return this.movies.sort(createdDateAscendingFn)
           }
           return this.movies.reverse(createdDateAscendingFn)
@@ -180,7 +180,9 @@ export default {
       return moment(date).fromNow();
     },
     hasVotes(movie) {
-      return this.hasLike(movie) || this.hasDislike(movie)
+      let likes = movie.likes.length;
+      let dislikes = movie.dislikes.length;
+      return likes > 0 || dislikes > 0
     },
     openAddMovie() {
       $('#addMovieModal').modal('show')
