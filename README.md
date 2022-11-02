@@ -27,7 +27,7 @@ spring.datasource.password=<your password>
 In the parent folder follow the below commands:
 
 - `mvn clean` to clean all previously build target sources
-- `mvn test` to run the unit tests of the back-end services
+- `mvn test` to run unit and api integration tests of the back-end
 - `mvn install` to build both the front-end and the back-end
 - `java -jar target/movierama-0.0.1-SNAPSHOT` to start the packaged application
 
