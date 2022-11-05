@@ -23,7 +23,8 @@ CREATE TABLE IF NOT EXISTS `movie_rama`.`movie`
     `description`  TEXT         NOT NULL,
     `created_date` DATETIME     NOT NULL,
     PRIMARY KEY (`id`),
-    INDEX `fk_account_id_idx` (`account_id` ASC),
+    UNIQUE INDEX `fk_account_id_idx` (`account_id` ASC),
+    UNIQUE INDEX `title_uidx` (`title` ASC),
     CONSTRAINT `fk_movie_account_account_id`
         FOREIGN KEY (`account_id`)
             REFERENCES `movie_rama`.`account` (`id`)
